@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-makeCacheMatrix <- function(x) {
+makeCacheMatrix <- function(x = matrix()) {
   
   mInv <- NULL
   set <- function(y) {
@@ -12,7 +12,6 @@ makeCacheMatrix <- function(x) {
   }
   
   get <- function() x
-  print(get())
   setInv <- function(solve) mInv <<- solve
   
   getInv <- function() mInv
